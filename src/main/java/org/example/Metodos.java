@@ -69,4 +69,28 @@ public class Metodos {
             System.out.println("lectura non");
         }
     }
+
+    //6
+    public static void calcularLonxitude(String dirName, String fileName) {
+        File ficheiro = new File(dirName, fileName);
+
+        if (ficheiro.exists() && ficheiro.isFile()) {
+            long lonxitude = ficheiro.length();
+            System.out.println("Lonxitude: " + lonxitude + " bytes");
+        } else {
+            System.out.println("O ficheiro non existe ou non é válido.");
+        }
+    }
+
+    //7
+    public static void facerLectura(String dirName, String fileName) {
+        File ficheiro = new File(dirName, fileName);
+
+            if (ficheiro.exists()) {
+                ficheiro.setWritable(false);
+                System.out.println("O ficheiro e so de lectura");
+            }
+        }
+
 }
+

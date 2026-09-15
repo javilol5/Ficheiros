@@ -1,7 +1,5 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     void main() {
 
@@ -26,5 +24,14 @@ public class Main {
         // Prueba 5: Comprobar permisos
         System.out.println("E5:");
         app.modoAcceso("/home/dam26/directorioNovo", "fichero.txt");
+
+        // Prueba 6: Comprobar Lonxitude
+        System.out.println("E6:");
+        app.calcularLonxitude("/home/dam26/directorioNovo", "fichero.txt");
+
+        // Prueba 7: Pasar a Lectura
+        System.out.println("E7:");
+        app.facerLectura("/home/dam26/directorioNovo", "fichero.txt");
+
     }
 }
