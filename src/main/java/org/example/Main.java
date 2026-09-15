@@ -27,11 +27,30 @@ public class Main {
 
         // Prueba 6: Comprobar Lonxitude
         System.out.println("E6:");
-        app.calcularLonxitude("/home/dam26/directorioNovo", "fichero.txt");
+        app.calculaLonxitude("/home/dam26/directorioNovo", "fichero.txt");
 
         // Prueba 7: Pasar a Lectura
         System.out.println("E7:");
-        app.facerLectura("/home/dam26/directorioNovo", "fichero.txt");
+        app.mLectura("/home/dam26/directorioNovo", "fichero.txt");
+
+        //Prueba 8: Pasar a Escritura
+        System.out.println("E8:");
+        app.mEscritura("/home/dam26/directorioNovo", "fichero.txt");
+
+        //Prueba 9: Borrar Ficheiro
+        System.out.println("E9:");
+        app.borraFicheiro("/home/dam26/directorioNovo", "fichero.txt");
+
+        //Prueba 10: Borrar Directorio
+        System.out.println("E10:");
+        app.borraDirectorio("/home/dam26/directorioNovo");
+
+        //Prueba 11: Mostrar contenido Directorio
+        System.out.println("E11:");
+        app.mContido("/home/dam26");
+
+
+
 
     }
 }

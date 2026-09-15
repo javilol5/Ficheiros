@@ -71,7 +71,7 @@ public class Metodos {
     }
 
     //6
-    public static void calcularLonxitude(String dirName, String fileName) {
+    public static void calculaLonxitude(String dirName, String fileName) {
         File ficheiro = new File(dirName, fileName);
 
         if (ficheiro.exists() && ficheiro.isFile()) {
@@ -83,14 +83,61 @@ public class Metodos {
     }
 
     //7
-    public static void facerLectura(String dirName, String fileName) {
+    public static void mLectura(String dirName, String fileName) {
         File ficheiro = new File(dirName, fileName);
 
-            if (ficheiro.exists()) {
-                ficheiro.setWritable(false);
-                System.out.println("O ficheiro e so de lectura");
+        if (ficheiro.exists()) {
+            ficheiro.setWritable(false);
+            System.out.println("O ficheiro e so de lectura");
+        }
+    }
+
+    //8
+    public static void mEscritura(String dirName, String fileName) {
+        File ficheiro = new File(dirName, fileName);
+
+        if (ficheiro.exists()) {
+            ficheiro.setWritable(true);
+            System.out.println("Podese escribir no ficheiro");
+        }
+    }
+
+    //9
+    public static void borraFicheiro(String dirName, String fileName) {
+        File ficheiro = new File(dirName, fileName);
+
+        if (ficheiro.exists()) {
+            ficheiro.delete();
+            System.out.println("Ficheiro eliminado");
+        } else {
+            System.out.println("Ficheiro non encontrado");
+        }
+    }
+
+    //10
+    public static void borraDirectorio(String dirName) {
+        File directorio = new File(dirName);
+
+        if (directorio.exists()) {
+            directorio.delete();
+            System.out.println("Directorio eliminado");
+        } else {
+            System.out.println("ruta inexistente ou con descencencia");
+        }
+    }
+
+    //11
+    public static void mContido(String dirName) {
+        File directorio = new File(dirName);
+
+        File[] contenido = directorio.listFiles();
+
+        if (contenido != null) {
+            for (File ficheiro : contenido) {
+                System.out.println(ficheiro.getName());
             }
         }
+    }
 
 }
 
