@@ -75,7 +75,7 @@ public class Metodos {
         File ficheiro = new File(dirName, fileName);
 
         if (ficheiro.exists() && ficheiro.isFile()) {
-            long lonxitude = ficheiro.length();
+            long lonxitude = ficheiro.getTotalSpace();
             System.out.println("Lonxitude: " + lonxitude + " bytes");
         } else {
             System.out.println("O ficheiro non existe ou non é válido.");
@@ -135,6 +135,20 @@ public class Metodos {
         if (contenido != null) {
             for (File ficheiro : contenido) {
                 System.out.println(ficheiro.getName());
+            }
+        }
+    }
+
+    // 12
+    public static void recur(File directorio) {
+        File[] contenido = directorio.listFiles();
+
+        if (contenido != null) {
+            for (File ficheiro : contenido) {
+                System.out.println(ficheiro.getAbsolutePath());
+                if (ficheiro.isDirectory()) {
+                    recur(ficheiro);
+                }
             }
         }
     }
