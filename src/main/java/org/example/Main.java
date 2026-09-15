@@ -1,5 +1,44 @@
 package org.example;
 
+public class Main {
+    void main() {
+
+        Metodos app = new Metodos();
+
+        String DIRECTORIO = "/home/dam26/Documentos/AD/Ficheiros";
+
+        //1
+        //app.creaDirectorio(DIRECTORIO+"/arquivosdir");
+        //System.out.println("E1: Directorio creado");
+
+        //2
+        app.creaFicheiro(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+        System.out.println("E2: Fichero creado");
+
+
+    }
+
+}
+
+
+
+
+// Prueba 1: Comprobar si es directorio                             | eDirectorio()
+// Prueba 2: Comprobar si es fichero                                | eFicheiro()
+// Prueba 3: Crear directorio                                       | creaDirectorio()
+// Prueba 4: Crear fichero                                          | creaFicheiro()
+// Prueba 5: Comprobar permisos                                     | modoAcceso()
+// Prueba 6: Comprobar Lonxitude                                    | calculaLonxitude()
+// Prueba 7: Pasar a Lectura                                        | mLectura()
+// Prueba 8: Pasar a Escritura                                      | mEscritura()
+// Prueba 9: Borrar Ficheiro                                        | borraFicheiro()
+// Prueba 10: Borrar Directorio                                     | borraDirectorio()
+// Prueba 11: Mostrar contenido Directorio                          | mContido()
+// Prueba 12: Muestra contenido de Direcotorios y Subdirectorios    | recur()
+
+
+
+
 //import java.io.File;
 //
 //public class Main {

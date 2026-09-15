@@ -75,7 +75,7 @@ public class Metodos {
         File ficheiro = new File(dirName, fileName);
 
         if (ficheiro.exists() && ficheiro.isFile()) {
-            long lonxitude = ficheiro.getTotalSpace();
+            long lonxitude = ficheiro.length();
             System.out.println("Lonxitude: " + lonxitude + " bytes");
         } else {
             System.out.println("O ficheiro non existe ou non é válido.");
