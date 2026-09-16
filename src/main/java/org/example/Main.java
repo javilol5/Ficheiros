@@ -1,5 +1,7 @@
 package org.example;
 
+import java.io.File;
+
 public class Main {
     void main() {
 
@@ -44,10 +46,15 @@ public class Main {
         //app.borraFicheiro(DIRECTORIO+"/arquivosdir", "Productos1.txt");
 
         //9
+        //System.out.println("E9:");
+        //app.borraFicheiro(DIRECTORIO+"/arquivosdir/subdir","Products2.txt");
+        //app.borraDirectorio(DIRECTORIO+"/arquivosdir/subdir");
+        //app.borraDirectorio(DIRECTORIO+"/arquivosdir");
+
+        //10
         System.out.println("E10:");
-        app.borraFicheiro(DIRECTORIO+"/arquivosdir/subdir","Products2.txt");
-        app.borraDirectorio(DIRECTORIO+"/arquivosdir/subdir");
-        app.borraDirectorio(DIRECTORIO+"/arquivosdir");
+        app.recur(new File("/sys/class/graphics"));
+
     }
 
 }
@@ -71,7 +78,7 @@ public class Main {
 
 
 
-//import java.io.File;
+
 //
 //public class Main {
 //    void main() {
