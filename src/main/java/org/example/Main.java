@@ -12,10 +12,42 @@ public class Main {
         //System.out.println("E1: Directorio creado");
 
         //2
-        app.creaFicheiro(DIRECTORIO+"/arquivosdir", "Productos1.txt");
-        System.out.println("E2: Fichero creado");
+        //app.creaFicheiro(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+        //System.out.println("E2: Fichero creado");
 
+        //3
+        //app.creaDirectorio(DIRECTORIO+"/arquivosdir/subdir");
+        //System.out.println("E3: Directorio creado");
+        //
+        //app.creaFicheiro(DIRECTORIO+"/arquivosdir/subdir", "Products2.txt");
+        //System.out.println("E3: Fichero creado");
 
+        //4
+        //app.mContido(DIRECTORIO+"/arquivosdir");
+        //System.out.println("E4: Mostrando Ficheiros e Directorios);
+
+        //5
+        //System.out.println("E5:");
+        //app.modoAcceso(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+        //app.calculaLonxitude(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+
+        //6
+        //System.out.println("E6:");
+        //app.mLectura(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+
+        //7
+        //System.out.println("E7:");
+        //app.mEscritura(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+
+        //8
+        //System.out.println("E8:");
+        //app.borraFicheiro(DIRECTORIO+"/arquivosdir", "Productos1.txt");
+
+        //9
+        System.out.println("E10:");
+        app.borraFicheiro(DIRECTORIO+"/arquivosdir/subdir","Products2.txt");
+        app.borraDirectorio(DIRECTORIO+"/arquivosdir/subdir");
+        app.borraDirectorio(DIRECTORIO+"/arquivosdir");
     }
 
 }
